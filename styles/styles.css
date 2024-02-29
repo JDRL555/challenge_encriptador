@@ -37,19 +37,53 @@ header img {
   width: 50%;
 }
 
+.contenedor_input .advertencia {
+  margin: 0 15px;
+  display: flex;
+  align-items: center;
+}
+
+.contenedor_input .advertencia p {
+  padding-left: 10px;
+  color: var(--main-text);
+  font-size: 12px;
+}
+
+.contenedor_input .advertencia svg {
+  width: 12px;
+}
+
 .contenedor_encriptado {
   padding: 20px;
+  margin: 10px;
   width: 20%;
-  height: 24rem;
+  height: 28rem;
   background-color: white;
   border-radius: 15px;
 }
 
-.contenedor_encriptado p {
+.contenedor_encriptado #texto_no_encontrado {
+  display: block;
+  height: 80%;
+  text-align: center;
+}
+
+.contenedor_encriptado #texto_no_encontrado p {
+  font-size: 14px;
+  color: var(--main-text);
+  padding-bottom: 10px;
+}
+
+.contenedor_encriptado #texto_encriptado {
+  display: none;
   color: var(--main-color);
   font-size: 18px;
   overflow-y: auto;
   height: 75%;
+}
+
+.contenedor_encriptado img {
+  width: 200px;
 }
 
 .contenedor_input textarea {

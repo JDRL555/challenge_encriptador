@@ -1,4 +1,5 @@
 function encriptar(texto_encriptar) {
+  texto_encriptar = texto_encriptar.toLowerCase()
   const letras = texto_encriptar.split("")
   letras.map((letra, indice) => {
     if(letra === "a") letras[indice] = combinaciones.a
@@ -12,6 +13,7 @@ function encriptar(texto_encriptar) {
 }
 
 function desencriptar(texto_encriptado) {
+  texto_encriptado = texto_encriptado.toLowerCase()
   let nuevo_texto = texto_encriptado
   nuevo_texto = nuevo_texto.replaceAll(combinaciones.a, "a")
   nuevo_texto = nuevo_texto.replaceAll(combinaciones.e, "e")
@@ -19,4 +21,12 @@ function desencriptar(texto_encriptado) {
   nuevo_texto = nuevo_texto.replaceAll(combinaciones.o, "o")
   nuevo_texto = nuevo_texto.replaceAll(combinaciones.u, "u")
   return nuevo_texto
+}
+
+function copiar(texto_encriptado) {
+  navigator.clipboard
+  .writeText(texto_encriptado)
+  .then(() => {
+    alert("Texto copiado!")
+  })
 }
