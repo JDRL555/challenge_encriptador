@@ -140,6 +140,7 @@ header img {
 }
 
 #btn_copiar {
+  display: none;
   color: var(--main-color);
   margin-top: 15px;
   width: 100%;
