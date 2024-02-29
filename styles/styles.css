@@ -30,9 +30,6 @@ header img {
 
 .contenedor_input,
 .contenedor_encriptado {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   margin: 20px;
 }
 
@@ -41,21 +38,37 @@ header img {
 }
 
 .contenedor_encriptado {
+  padding: 20px;
   width: 20%;
+  height: 24rem;
+  background-color: white;
+  border-radius: 15px;
+}
+
+.contenedor_encriptado p {
+  color: var(--main-color);
+  font-size: 18px;
+  overflow-y: auto;
+  height: 75%;
 }
 
 .contenedor_input textarea {
+  resize: none;
   display: block;
   width: 100%;
   height: 20rem;
   padding: 10px;
-  border: 1px solid var(--main-color);
-  background-color: var(--main-background);
+  border: none;
   border-radius: 15px;
+  background-color: var(--main-background);
   outline: none;
   font-size: 18px;
   color: var(--main-color);
   transition: .3s;
+}
+
+.contenedor_input textarea::placeholder {
+  color: var(--main-color);
 }
 
 .contenedor_input textarea:focus {
@@ -72,17 +85,6 @@ header img {
 
 .contenedor_input button {
   width: 45%;
-}
-
-.contenedor_encriptado #texto_encriptado {
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  padding: 20px;
-  width: 90%;
-  height: 24rem;
-  background-color: white;
-  border-radius: 15px;
 }
 
 .contenedor_botones {
